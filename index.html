@@ -19,10 +19,20 @@
   </head>
   <body>
     <header class="head">
-      <div class="container">
-        <div class="header">
+      <div class="container header">
+        <a href="" class="logo"><span class="logo-span">Web</span>Studio</a>
+        <button class="icon-menu buttons" data-menu-open>
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#mobile-menu"></use>
+          </svg>
+        </button>
+        <div class="burger-menu is-hidden" data-menu>
+          <button class="icon-close buttons" data-menu-close>
+            <svg width="22" height="22">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
           <nav class="site-nav">
-            <a href="" class="logo"><span class="logo-span">Web</span>Studio</a>
             <ul class="site-nav-list list">
               <li class="site-nav-item">
                 <a href="./index.html" class="link current">Studio</a>
@@ -41,8 +51,38 @@
                 >info@devstudio.com</a
               >
             </li>
-            <li class="contacts-item">
+            <li class="contacts-item phone-number">
               <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+          <ul class="menu-list-icon list">
+            <li class="menu-icon-item">
+              <a href="" class="link-icon">
+                <svg class="icon-item" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon-item">
+              <a href="" class="link-icon">
+                <svg class="icon-item" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon-item">
+              <a href="" class="link-icon">
+                <svg class="icon-item" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon-item">
+              <a href="" class="link-icon">
+                <svg class="icon-item" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -409,7 +449,7 @@
           </ul>
         </div>
         <div>
-          <form action="" class="email-block">
+          <form class="email-block">
             <div class="email-input">
               <label for="mail" class="email-label"> Subscribe </label>
               <input
@@ -462,8 +502,6 @@
             <span class="modal-label-text">Comment</span>
             <textarea
               name="comment"
-              cols=""
-              rows=""
               class="comment"
               placeholder="Text input"
             ></textarea>
@@ -480,6 +518,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
