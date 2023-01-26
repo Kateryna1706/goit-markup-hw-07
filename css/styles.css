@@ -777,7 +777,7 @@ img {
   .clients-list-item:not(:nth-child(2n)) {
     margin-right: 16px;
   }
-  .clients-list-item:not(:nth-last-child(-n+2)) {
+  .clients-list-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 72px;
   }
   .clients-list-item {
@@ -813,23 +813,13 @@ img {
   padding-bottom: 96px;
 
   background-color: var(--secondary-color);
-
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
 }
-
-/* .footer {
-  display: flex;
-} */
 
 .logo-block {
   width: 268px;
   margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
-
-  /* margin-right: 120px;
-  width: 264px; */
 }
 
 footer .logo {
@@ -853,11 +843,15 @@ footer .logo {
   margin-bottom: 16px;
 
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
+}
+
+.footer-position {
+  margin-bottom: 72px;
 }
 
 .footer-list {
@@ -870,13 +864,14 @@ footer .logo {
 }
 
 .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -886,23 +881,11 @@ footer .logo {
   background-color: #31d0aa;
 }
 
-.media-block {
-  margin-bottom: 72px;
-
-  /* margin-right: 80px; */
-}
-
-/* .email-block {
-  display: flex;
-} */
-
 .email-input {
   display: flex;
   flex-direction: column;
 
   margin-bottom: 16px;
-
-  /* margin-right: 24px; */
 }
 
 .email-label {
@@ -928,8 +911,6 @@ footer .logo {
   border-radius: 4px;
 
   background-color: rgba(33, 150, 243, 0);
-
-  /* width: 264px; */
 }
 
 .email-button::placeholder {
@@ -971,6 +952,70 @@ footer .logo {
 
 .arrow-icon {
   fill: var(--primary-white-color);
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-left: 108px;
+  }
+  .footer-position {
+    display: flex;
+    justify-content: left;
+  }
+  .logo-block {
+    display: inline-block;
+    margin: 0 24px 0 0;
+    width: 264px;
+  }
+  footer .logo {
+    text-align: left;
+  }
+  .media-block {
+    display: inline-block;
+  }
+  .footer-heading {
+    text-align: left;
+  }
+  .email-block {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+  }
+  .email-input {
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+  .email-label {
+    text-align: left;
+  }
+  .email-button {
+    width: 264px;
+  }
+  .submit-button {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 15px;
+  }
+  .logo-block {
+    margin-right: 120px;
+  }
+  .footer-position {
+    margin: 0 80px 0 0;
+  }
 }
 
 /*portfolio.html*/
