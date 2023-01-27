@@ -521,18 +521,16 @@ img {
   .features-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -12px;
-    margin-left: -12px;
   }
   .features-item {
     display: flex;
     flex-direction: column;
-    flex-basis: calc((100%-4 * 12px) / 2);
+    flex-basis: 356px;
   }
-  .features-item {
-    margin-right: 12px;
-    margin-left: 12px;
+  .features-item:nth-child(2n + 1) {
+    margin-right: 24px;
   }
+
   .features-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 72px;
   }
