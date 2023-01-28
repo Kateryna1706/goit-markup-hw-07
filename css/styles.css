@@ -47,6 +47,10 @@ h3 {
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -189,7 +193,7 @@ img {
     padding-bottom: 24px;
   }
   .burger-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
